@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridha Shahbaz's Law Student Portfolio</title>
+    <!-- Tailwind CSS CDN for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS (on top of Tailwind) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            /* black background */
+            color: #000000;
+            /* Dark charcoal text */
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Styling for section headers */
+        .section-header {
+            color: #000000;
+            /* black */
+        }
+
+        /* Primary button styling */
+        .btn-primary {
+            background-color: #000000;
+            /*  button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            /* Slightly rounded corners */
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #000000;
+            /*  on hover */
+        }
+
+        /* Card styling for sections like About Me details and Testimonials */
+        .card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Specific styling for the top grey section of experience cards */
+        .experience-card-header {
+            background-color: #e2e8f0;
+            /* Light gray */
+            padding: 1rem;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+            margin: -2rem -2rem 1rem -2rem;
+            /* Adjust to extend to card edges */
+            font-weight: 600;
+            text-align: center;
+            color: #2d3748;
+            font-size: 1.25rem;
+            /* text-xl */
+        }
+    </style>
+</head>
+
+<body class="font-inter">
+    
+
+    <!-- Header Section -->
+    <header class="bg-header-footer text-white p-5 shadow-md sticky  top-0 z-90">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold rounded-lg p-2 hover:bg-blue-700 transition duration-300">
+                Ridha Shahbaz
+            </a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-blue-200 font-medium transition duration-300">About Me</a></li>
+                <li><a href="#academics" class="hover:text-blue-200 font-medium transition duration-300">Academics</a>
+                </li>
+                <li><a href="#writing" class="hover:text-blue-200 font-medium transition duration-300">Writing</a></li>
+                <li><a href="#experience" class="hover:text-blue-200 font-medium transition duration-300">Experience</a>
+                </li>
+                <li><a href="#testimonials"
+                        class="hover:text-blue-200 font-medium transition duration-300">Testimonials</a></li>
+                <li><a href="#skills" class="hover:text-blue-200 font-medium transition duration-300">Skills</a></li>
+                <li><a href="#contact" class="hover:text-blue-200 font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <!-- Hero/About Me Introduction Section -->
+   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero-section {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .hero-left {
+      flex: 6;
+      background-color: #9fb5bf;
+      color: #1a1a1a;
+      padding: 80px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-left .intro {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .hero-left h1 {
+      font-size: 90px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .hero-left .description {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.8;
+      text-transform: uppercase;
+      max-width: 90%;
+    }
+
+    .hero-right {
+      flex: 4;
+      background-color: #0f0909;
+      display: flex;
+      align-items: right;
+      justify-content: right;
+    }
+
+    .hero-right img {
+      width: 100%;
+      max-width: 950px;
+      height: 550;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .hero-left, .hero-right {
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .hero-left h1 {
+        font-size: 36px;
+      }
+
+      .hero-right img {
+        width: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section Start -->
+  <section class="hero-section">
+    <div class="hero-left">
+      <p class="intro">Hello Everyone.</p>
+      <h1>I'M RIDHA SHAHBAZ</h1>
+      <p class="description">
+        A dedicated law student at London South Bank University, passionate about legal policy 
+        and client relationship management, with a keen interest in commercial and corporate law.
+      </p>
+    </div>
+    <div class="hero-right">
+      <img src="ridha pic.png" alt="Ridha Shahbaz">
+    </div>
+  </section>
+  <!-- Hero Section End -->
+    <!-- About Me Details Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold section-header mb-12">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-left card">
+                    <p class="text-lg text-gray-700 mb-4">
+                        I am <b>Ridha Shahbaz</b>, a dedicated law student currently pursuing my LLB Law at <b>London
+                            South Bank University (2023 – 2026)</b>. My academic journey and practical experiences have
+                        cultivated a strong interest in legal practice, particularly in immigration law, and a
+                        commitment to client care.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        My goal is to leverage my developing skills in legal research, problem-solving, and
+                        communication to contribute effectively to the legal field. I am eager to apply my knowledge and
+                        grow within a dynamic legal environment.    
+                    </p>
+                </div>
+                <div class="text-left card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Key Interests:</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                        <li>Commercial and Corporate law</li>
+                        <li>Client Relationship Management</li>
+                        <li>Legal Policy</li>
+                        <li>Problem Solving in Legal Contexts</li>
+                        <li>Volunteering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold section-header mb-12">Testimonials & Endorsements</h2>
+            <div class="card">
+                <p class="text-xl italic text-gray-700 mb-6">
+                    "Ridha consistently demonstrates excellent analytical thinking and a natural flair for legal
+                    writing. Her dedication to understanding complex legal issues is truly commendable."
+                </p>
+                <p class="text-lg font-semibold text-gray-800">— Professor S. Khan, [Your University/Institution]</p>
+            </div>
+            <!-- You can add more testimonials here by duplicating the 'card' div -->
+        </div>
+    </section>
+
+    <!-- Academic Highlights Section -->
+    <section id="academics" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold section-header mb-12">Academic Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">London South Bank University</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                        <li><b>LLB Law:</b> 2023 – 2026</li>
+                        <li>Year 1 Grade Average: 73.83</li>
+                        <li>Year 2 Grade Average: 72.5</li>
+                        <li> <b>Vice-President</b>, LSBU Bar and Mooting Society (Academic Year 25/26)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Lahore Learning Campus (2017 – 2023)</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                        <li><b>A Levels:</b> Chemistry D, Physics E, Biology D</li>
+                        <li><b>AS Levels:</b> Biology C, Physics B, Chemistry B</li>
+                        <li><b>IGCSEs:</b> 8 A*- B, including B’s in English and Mathematics</li>
+                    </ul>
+                </div>
+                <div class="card md:col-span-2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Certifications</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                        <li><b>LSBU Bar and Mooting Society Internal Mooting Competition (2023 – 2026)</b>
+                            <ul class="list-circle list-inside ml-5">
+                                <li>Winner of the 2024-2025 competition.</li>
+                                <li>Semi-finalist of the 2023-2024 competition.</li>
+                            </ul>
+                        </li>
+                        <li><b>The Association of Law Clerks, Outdoor Clerking Course (Awarded Dec 2024)</b>
+                            <ul class="list-circle list-inside ml-5">
+                                <li>Covered: Assisting Counsel, Case Conferences, Legal Visits, and Applications before
+                                    a District Judge.</li>
+                                <li>Gained practical understanding of courtroom procedures and clerical
+                                    responsibilities.</li>
+                            </ul>
+                        </li>
+                        <!-- Add other certifications like Westlaw, Coursera legal tech courses here if applicable -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Writing Samples Section -->
+    <section id="writing" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold section-header mb-12">Legal Writing Samples</h2>
+            <p class="text-lg text-gray-700 mb-10">Here are some examples of my legal writing, showcasing my research
+                and analytical skills.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Comparative Law Research Paper</h3>
+                    <p class="text-gray-600 mb-4">
+                        An in-depth research paper comparing the legal frameworks protecting survivors of domestic
+                        violence in England and Wales versus Egypt.
+                    </p>
+                    <div class="text-center">
+                        <a href="Comparative Law Research Paper.pdf" download class="btn-primary inline-block">
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">The Fault Based Liability System</h3>v 
+                    <p class="text-gray-600 mb-4">
+                        An in-depth research paper discussing fault-based liability in tort law, its strengths,
+                        weaknesses, and alternative compensation systems.
+                    </p>
+                    <div class="text-center">
+                        <a href="The Fault Based Liability System.pdf" download class="btn-primary inline-block">
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">The Four Ethical Principles of Medical Ethics
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        A comprehensive research paper exploring medical ethics principles, their manageability in
+                        complex cases like assisted dying and abortion, and the need for additional principles.
+                    </p>
+                    <div class="text-center">
+                        <a href="The Four Ethical Principles of Medical Ethics 
+.pdf" download class="btn-primary inline-block">
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+                <!-- Add more writing samples here by duplicating the 'card' div -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">My Experience & Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Experience/Project Card 1: Burgess Okoh Saunders LTD -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden card-shadow hover:scale-105 transition duration-300">
+                    <img src="placement.jpg.png"
+                        alt="Burgess Okoh Saunders LTD Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Work Placement Intern, Burgess Okoh
+                            Saunders LTD</h3>
+                        <p class="text-gray-700 mb-4">Feb 2025 (4 days/32 hours)</p>
+                        <ul class="text-sm text-gray-600 mb-4 list-disc list-inside space-y-1">
+                            <li>Assisted solicitors by drafting letters to courts and clients, reviewing conveyancing
+                                contracts, filling TR1 forms for property cases, and organizing court bundles.</li>
+                            <li>Managed confidential client files efficiently, gaining insight into client care and the
+                                process of litigation.</li>
+                            <li>Shadowed solicitors in property, commercial, and family law departments.</li>
+                            <li>Developed strong communication skills and built confidence in multitasking under
+                                pressure.</li>
+                        </ul>
+                        <a href="#" class="text-indigo-800 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Experience/Project Card 2: Majestic Solicitors -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden card-shadow hover:scale-105 transition duration-300">
+                    <img src="legal intern.png"
+                        alt="Majestic Solicitors Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Legal Intern, Majestic Solicitors</h3>
+                        <p class="text-gray-700 mb-4">Jul 2024 (2 weeks)</p>
+                        <ul class="text-sm text-gray-600 mb-4 list-disc list-inside space-y-1">
+                            <li>Assisted solicitors in organizing legal documents and drafting client care letters.</li>
+                            <li>Observed solicitor-client meetings, gaining insight into professional conduct and client
+                                relationship management, mainly in immigration law.</li>
+                            <li>Maintained client confidentiality and strengthened attention to detail.</li>
+                            <li>Strengthened problem solving, listening, and organizational skills.</li>
+                        </ul>
+                        <a href="#" class="text-indigo-800 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Experience/Project Card 3: British Red Cross -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden card-shadow hover:scale-105 transition duration-300">
+                    <img src="retail.png"
+                        alt="British Red Cross Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Retail Assistant, British Red Cross</h3>
+                        <p class="text-gray-700 mb-4">Jan 2024 – Jan 2025</p>
+                        <ul class="text-sm text-gray-600 mb-4 list-disc list-inside space-y-1">
+                            <li>Maintained and organized the shop floor, ensuring a welcoming and efficient environment
+                                for customers.</li>
+                            <li>Operated the till, handling sale transactions while delivering excellent customer
+                                service.</li>
+                            <li>Assisted customers with inquiries and professionally dealt with challenging customers.
+                            </li>
+                            <li>Developed strong skills in communication, teamwork, time management, leadership, and
+                                customer interaction.</li>
+                        </ul>
+                        <a href="#" class="text-indigo-800 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Experience/Project Card 4: LSBU Bar and Mooting Society Internal Mooting Competition -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden card-shadow hover:scale-105 transition duration-300">
+                    <img src="mooting.png"
+                        alt="Mooting Competition Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">LSBU Bar and Mooting Society Internal
+                            Mooting Competition</h3>
+                        <p class="text-gray-700 mb-4">2023 – 2026</p>
+                        <ul class="text-sm text-gray-600 mb-4 list-disc list-inside space-y-1">
+                            <li><b>Winner</b> of the 2024-2025 competition.</li>
+                            <li><b>Semi-finalist</b> of the 2023-2024 competition.</li>
+                            <li>Honed advocacy, legal argumentation, and public speaking skills.</li>
+                        </ul>
+                        <a href="#" class="text-indigo-800 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Experience/Project Card 5: The Association of Law Clerks, Outdoor Clerking Course -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden card-shadow hover:scale-105 transition duration-300">
+                    <img src="clerk.png"
+                        alt="Clerking Course Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Outdoor Clerking Course, The Association of
+                            Law Clerks</h3>
+                        <p class="text-gray-700 mb-4">Awarded Dec 2024</p>
+                        <ul class="text-sm text-gray-600 mb-4 list-disc list-inside space-y-1">
+                            <li>Covered: Assisting Counsel, Case Conferences, Legal Visits, and Applications before a
+                                District Judge.</li>
+                            <li>Gained practical understanding of courtroom procedures and clerical responsibilities.
+                            </li>
+                        </ul>
+                        <a href="#" class="text-indigo-800 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold section-header mb-12">Skills & Tools</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Legal Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                        <li>Legal Research</li>
+                        <li>Legal Writing (Memos, Briefs, Letters)</li>
+                        <li>Client Care & Confidentiality</li>
+                        <li>Litigation Process Understanding</li>
+                        <li>Problem Solving</li>
+                        <li>Analytical Thinking</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Technical Skills & Tools</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                        <li>Westlaw (Certification pending/to be added)</li>
+                        <li>LexisNexis (Proficiency to be added)</li>
+
+                        <!-- Add other relevant legal tech tools here -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Languages & Interests</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2">
+                        <li><b>Languages:</b> English (Native), Urdu (Advanced Spoken), Hindi (Advanced Spoken), Punjabi
+                            (Advanced Spoken)</li>
+                        <li><b>Interests:</b> Reading thriller novels, Crochet, Swimming, Padel, Volunteering</li>
+                        <li><b>Societies:</b> LSBU Bar and Mooting Society, Law Society</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Resume Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold section-header mb-6">Contact & Resume</h2>
+            <p class="text-lg text-gray-700 mb-10">
+                Feel free to reach out for collaborations or opportunities. You can also download my resume below.
+            </p>
+            <form class="space-y-6 mb-8">
+                <div>
+                    <input type="text" placeholder="Your Name"
+                        class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                </div>
+                <div>
+                    <input type="email" placeholder="Your Email"
+                        class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                </div>
+                <div>
+                    <textarea placeholder="Your Message" rows="6"
+                        class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">
+                    Send Message
+                </button>
+            </form>
+            <p class="text-gray-700 mb-4">Email: <a href="mailto:ridhashahbaz@gmail.com"
+                    class="text-blue-600 hover:underline">ridhashahbaz@gmail.com</a></p>
+            <p class="text-gray-700 mb-8">Phone: +44 7474342467</p>
+            <a href="CV-RidhaShahbaz.docx" download class="btn-primary inline-block bg-blue-600 hover:bg-blue-700">
+                Download Resume (DOCX)
+            </a>
+            <p class="text-gray-600 mt-4">
+                Connect with me on <a href="#" class="text-blue-600 hover:underline font-medium">LinkedIn</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2023 Ridha Shahbaz's Portfolio. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for any future interactivity, e.g., smooth scrolling or form submission
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to create and display a custom message box (instead of alert())
+            function showMessageBox(message) {
+                // Remove any existing message box to prevent duplicates
+                const existingMessageBox = document.getElementById('customMessageBox');
+                if (existingMessageBox) {
+                    existingMessageBox.remove();
+                }
+
+                // Create the message box container
+                const messageBox = document.createElement('div');
+                messageBox.id = 'customMessageBox';
+                messageBox.className = 'fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50';
+
+                // Create the content box inside the message box
+                const contentBox = document.createElement('div');
+                contentBox.className = 'bg-white rounded-lg p-8 shadow-2xl max-w-md w-full text-center transform scale-95 opacity-0 transition-all duration-300 ease-out';
+                contentBox.innerHTML = `
+                    <p class="text-xl font-semibold text-gray-800 mb-6">${message}</p>
+                    <button id="closeMessageBox" class="bg-blue-600 text-white hover:bg-blue-700 font-bold py-2 px-6 rounded-full transition duration-300">
+                        Close
+                    </button>
+                `;
+
+                messageBox.appendChild(contentBox);
+                document.body.appendChild(messageBox);
+
+                // Animate the message box in
+                setTimeout(() => {
+                    contentBox.classList.remove('scale-95', 'opacity-0');
+                    contentBox.classList.add('scale-100', 'opacity-100');
+                }, 10); // Small delay to ensure transition applies
+
+                // Add event listener to the close button
+                document.getElementById('closeMessageBox').addEventListener('click', () => {
+                    // Animate the message box out before removing
+                    contentBox.classList.remove('scale-100', 'opacity-100');
+                    contentBox.classList.add('scale-95', 'opacity-0');
+                    messageBox.classList.add('opacity-0'); // Fade out the backdrop
+
+                    // Remove the message box after the animation
+                    setTimeout(() => {
+                        messageBox.remove();
+                    }, 300); // Match transition duration
+                });
+
+                // Close message box if clicked outside
+                messageBox.addEventListener('click', (event) => {
+                    if (event.target === messageBox) {
+                        // Animate the message box out before removing
+                        contentBox.classList.remove('scale-100', 'opacity-100');
+                        contentBox.classList.add('scale-95', 'opacity-0');
+                        messageBox.classList.add('opacity-0'); // Fade out the backdrop
+
+                        // Remove the message box after the animation
+                        setTimeout(() => {
+                            messageBox.remove();
+                        }, 300); // Match transition duration
+                    }
+                });
+            }
+
+            // Example: Simple form submission message
+            const contactForm = document.querySelector('#contact form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (event) => {
+                    event.preventDefault(); // Prevent default form submission
+                    showMessageBox('Thank you for your message! I will get back to you soon.');
+                    contactForm.reset(); // Clear the form fields
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
